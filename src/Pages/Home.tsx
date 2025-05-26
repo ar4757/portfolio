@@ -50,7 +50,7 @@ function Home() {
   return (
     <>
       <h1></h1>
-      <div className="grid">
+      <div className="wrapper">
         {imgsLoaded ? ResultList : <></>}
       </div>
     </>
