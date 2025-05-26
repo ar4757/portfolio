@@ -1,0 +1,38 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+*.env
+
+# Editor directories and files
+#.vscode/*
+!.vscode/extensions.json
+.idea
+
+# For me
+.DS_Store
+package-lock.json
+logging/*
+server/*/logging/*
+testing_scripts/*
+server/*/out/*
+lambdas/*/*.zip
+serviceAccountKey.json
+server/*/src/types
+
+secrets.tfvars
+terraform.tfstate*
+*.pem
+*.pub
+terraform-provider-*
+LICENSE.txt
+.terraform*

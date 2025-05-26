@@ -1,0 +1,73 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+         "type": "npm",
+         "script": "dev",
+         "detail": "vite",
+         "label": "npm: dev",
+         "group": {
+            "kind": "test",
+            "isDefault": true
+         },
+         "isBackground": true,
+         "problemMatcher": {
+            "owner": "custom",
+            "pattern": {
+               "regexp": "^$"
+            }
+         }
+      },
+      {
+         "type": "npm",
+         "script": "build",
+         "group": "build",
+         "problemMatcher": [],
+         "label": "npm: build",
+         "detail": "tsc && vite build"
+      },
+      {
+         "type": "shell",
+         "label": "terraform: init",
+         "options": {
+            "cwd": "${workspaceFolder}/terraform/"
+         },
+         "command": "cd terraform && terraform init"
+      },
+      {
+         "type": "shell",
+         "label": "terraform: apply",
+         "options": {
+            "cwd": "${workspaceFolder}/terraform/"
+         },
+         "command": "terraform apply -var-file=\"secrets.tfvars\"",
+         "problemMatcher": []
+      },
+      {
+         "type": "shell",
+         "label": "terraform: destroy",
+         "options": {
+            "cwd": "${workspaceFolder}/terraform/"
+         },
+         "command": "terraform destroy -var-file=\"secrets.tfvars\""
+      },
+      {
+         "type": "shell",
+         "label": "ssh into ec2",
+         "options": {
+            "cwd": "${workspaceFolder}/terraform/"
+         },
+         "command": "ssh -i portfolio_keypair.pem ec2-user@$(terraform output -raw ec2_public_dns)",
+         "problemMatcher": []
+      },
+      {
+         "type": "shell",
+         "label": "copy scripts into ec2",
+         "options": {
+            "cwd": "${workspaceFolder}/terraform/"
+         },
+         "command": "scp -i portfolio_keypair.pem ../server/scripts/.env ../server/scripts/* ec2-user@$(terraform output -raw ec2_public_dns):~/",
+         "problemMatcher": []
+      }
+   ]
+}
