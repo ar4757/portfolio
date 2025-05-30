@@ -2,6 +2,7 @@ import '../index.scss'
 import NavBar from '../Components/NavBar.tsx'
 import { Outlet } from 'react-router-dom'
 import { useEffect } from 'react'
+import ConstantInfo from './ConstantInfo.tsx'
 
 function UserApp() {
   useEffect(() => {
@@ -9,19 +10,22 @@ function UserApp() {
   }, [])
 
   return (
-    <>
-    <NavBar/>
-    <br />
-    <div className="center">
-      <Outlet/>
+    <div className="wrapper--columns">
+      <div className="left">
+        <ConstantInfo/>
+      </div>
+      <div className="right">
+        <NavBar/>
+        <br />
+        <div className="center">
+          <Outlet/>
+        </div>
+        <br />
+        <footer>
+          <p className="text--tiny">© Copyright 2025 Andrew Ratz</p>
+        </footer>
+      </div>
     </div>
-    <br />
-    <footer>
-      <a className="text--small" href="/privacy">Privacy Policy</a>
-      <p className="text--small">This site uses affiliate links and earns a commission from certain links. This does not affect your purchases or the price you may pay.</p>
-      <p className="text--small">As an Amazon Associate we earn from qualifying purchases.</p>
-    </footer>
-    </>
   )
 }
 

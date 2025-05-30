@@ -5,12 +5,13 @@ import { PortfolioItem } from '../Types/PortfolioItem';
 
 function Home() {
   const allGames: PortfolioItem[] = [
-    {name: "Game Price Drops", description: "A website that scrapes the latest video game sales data and notifies users of new sales.", link_url: "https://www.gamepricedrops.com", image_url: "https://images.squarespace-cdn.com/content/v1/56acc1138a65e2a286012c54/1476623632079-BBAERA9UGQ0EODC6680U/pixabaytest6-7.jpg", repo_url: null},
-    {name: "Homer", description: "A website used by hundreds of homeowners and businesses to find each other.", link_url: "https://www.gamepricedrops.com", image_url: "https://images.squarespace-cdn.com/content/v1/56acc1138a65e2a286012c54/1476623632079-BBAERA9UGQ0EODC6680U/pixabaytest6-7.jpg", repo_url: null},
-    {name: "Persona 5 Fusion Calculator", description: "An iOS app that identifies Persona fusions for the hit videogame Persona 5.", link_url: "https://www.gamepricedrops.com", image_url: "https://images.squarespace-cdn.com/content/v1/56acc1138a65e2a286012c54/1476623632079-BBAERA9UGQ0EODC6680U/pixabaytest6-7.jpg", repo_url: "https://github.com/ar4757/Fusion-Calculator"},
-    {name: "Route My Run", description: "An iOS app that recommends running routes, and provides GPS tracking, turn-by-turn directions, and social networking features.", link_url: "https://www.gamepricedrops.com", image_url: "https://images.squarespace-cdn.com/content/v1/56acc1138a65e2a286012c54/1476623632079-BBAERA9UGQ0EODC6680U/pixabaytest6-7.jpg", repo_url: "https://github.com/ar4757/Route-My-Run"},
-    {name: "Tanks", description: "A video game made in Unity that is inspired by Wii Play.", link_url: "https://www.gamepricedrops.com", image_url: "https://images.squarespace-cdn.com/content/v1/56acc1138a65e2a286012c54/1476623632079-BBAERA9UGQ0EODC6680U/pixabaytest6-7.jpg", repo_url: "https://github.com/ar4757/Tanks"},
-    {name: "Backpacking", description: "A video game made for my Graduate-level AI for Games at the University of Florida. A parody of the Role Playing Game genre that is inspired by Earthbound and the Legend of Zelda.", link_url: "https://www.gamepricedrops.com", image_url: "https://images.squarespace-cdn.com/content/v1/56acc1138a65e2a286012c54/1476623632079-BBAERA9UGQ0EODC6680U/pixabaytest6-7.jpg", repo_url: null},
+    {name: "Game Price Drops", description: "A website that scrapes the latest video game sales data and notifies users of new sales.", link_url: "https://www.gamepricedrops.com", image_url: "GamePriceDrops.png", repo_url: null},
+    {name: "Homer", description: "A website used by hundreds of homeowners and businesses to find each other.", link_url: "https://www.homer.com", image_url: "Homer.png", repo_url: null},
+    {name: "Persona 5 Fusion Calculator", description: "An iOS app that identifies Persona fusions for the hit videogame Persona 5.", link_url: null, image_url: "https://github.com/ar4757/Fusion-Calculator/blob/master/GitHub%20Images/demo.gif?raw=true", repo_url: "https://github.com/ar4757/Fusion-Calculator"},
+    {name: "Route My Run", description: "An iOS app that recommends running routes, and provides GPS tracking, turn-by-turn directions, and social networking features.", link_url: null, image_url: "RouteMyRun.png", repo_url: "https://github.com/ar4757/Route-My-Run"},
+    {name: "Tanks", description: "A video game made in Unity that is inspired by Wii Play.", link_url: null, image_url: "Tanks!.png", repo_url: "https://github.com/ar4757/Tanks"},
+    {name: "Backpacking", description: "A video game made for my Graduate-level AI for Games at the University of Florida. A parody of the Role Playing Game genre that is inspired by Earthbound and the Legend of Zelda.", link_url: null, image_url: "Backpacking.png", repo_url: null},
+    {name: "RecipEase", description: "An Android app that recommends recipes based on what users have in their pantry!", link_url: null, image_url: "https://user-images.githubusercontent.com/26062564/37796120-dbd97cc4-2dec-11e8-9f10-fc63f87c3c77.gif", repo_url: "https://github.com/recipEase-admin/recipEase"},
   ];
   const [imgsLoaded, setImgsLoaded] = useState(false);
 
@@ -49,8 +50,8 @@ function Home() {
 
   return (
     <>
-      <h1></h1>
-      <div className="wrapper">
+      <br/>
+      <div className="grid">
         {imgsLoaded ? ResultList : <></>}
       </div>
     </>

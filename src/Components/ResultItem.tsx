@@ -22,20 +22,22 @@ function LinkToDetails(props: any) {
           <div className="header">
             <p>{gameData.description}</p>
           </div>
-          <div className="header">
-            {gameData.repo_url ?
-              <div>
-                <br/>
-                <Link className="link-item" role="button" to={gameData.repo_url} onMouseEnter={() => setIsRepoHovered(true)} onMouseLeave={() => setIsRepoHovered(false)}>
-                <span className={isRepoHovered ? "name name--hover" : "name"}>{gameData.repo_url}</span>
-                </Link>
-              </div>
-              :
-              <></>
-            }
-          </div>
         </div>
       </Link>
+      <div className="result-item">
+        <div className="header">
+          {gameData.repo_url ?
+            <div>
+              <br/>
+              <Link className="link-item" role="button" to={gameData.repo_url} onMouseEnter={() => setIsRepoHovered(true)} onMouseLeave={() => setIsRepoHovered(false)}>
+                <span className={isRepoHovered ? "name name--hover" : "name"}>{gameData.repo_url}</span>
+              </Link>
+            </div>
+            :
+            <></>
+          }
+        </div>
+      </div>
     </div>
   )
 }
