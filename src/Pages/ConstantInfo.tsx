@@ -9,18 +9,18 @@ function ConstantInfo() {
         <p className="text--small">I am a software engineer with a passion for creating intuitive user experiences. I have experience in web development, mobile app development, and game development.</p>
         <br/>
         <NavLink className="wrapper--info" role="button" to="mailto:ar4757@gmail.com">
-          <span className="top">Email</span>
-          <span className="bottom">ar4757@gmail.com</span>
+          <span>Email</span>
+          <span>ar4757@gmail.com</span>
         </NavLink>
         <br/>
         <NavLink className="wrapper--info" role="button" to="https://www.linkedin.com/in/andrewratz/">
-          <span className="top">LinkedIn</span>
-          <span className="bottom">Andrew Ratz</span>
+          <span>LinkedIn</span>
+          <span>Andrew Ratz</span>
         </NavLink>
         <br/>
         <NavLink className="wrapper--info" role="button" to="https://github.com/ar4757">
-          <span className="top">GitHub</span>
-          <span className="bottom">ar4757</span>
+          <span>GitHub</span>
+          <span>ar4757</span>
         </NavLink>
         <br/>
       </div>

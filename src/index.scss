@@ -31,7 +31,8 @@
 }
 
 .center {
-  min-height: 100vh;
+  height: 100vh;
+  overflow: auto;
 }
 
 a {
@@ -44,7 +45,7 @@ a:hover {
 }
 
 html, body {
-  overflow-x: hidden;
+  overflow: hidden;
 }
 body {
   position: relative;
@@ -89,7 +90,6 @@ h1 {
 }
 
 .nav {
-  position: sticky;
   top: 0;
   float: left;
   z-index: 10;
@@ -97,6 +97,8 @@ h1 {
   width: 76vw;
   line-height: 40px;
   border-bottom: 2px solid var(--gray-color);
+  height: 9vh;
+  position: absolute;
 }
 
 .nav-btn {
@@ -260,6 +262,9 @@ a {
   }
   .text--small {
     font-size: 12px;
+  }
+  .center {
+    height: 90vh;
   }
   .wrapper--info {
     font-size: 2vw;
