@@ -30,7 +30,7 @@ function LinkToDetails(props: any) {
             <div>
               <br/>
               <Link className="link-item" role="button" to={gameData.repo_url} onMouseEnter={() => setIsRepoHovered(true)} onMouseLeave={() => setIsRepoHovered(false)}>
-                <span className={isRepoHovered ? "name name--hover" : "name"}>{gameData.repo_url}</span>
+                <span className={isRepoHovered ? "repo-name repo-name--hover" : "repo-name"}>{gameData.repo_url}</span>
               </Link>
             </div>
             :
