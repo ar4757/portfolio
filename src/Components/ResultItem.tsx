@@ -5,24 +5,34 @@ import { PortfolioItem } from '../Types/PortfolioItem'
 
 function LinkToDetails(props: any) {
   let gameData = props.item as PortfolioItem;
-  const [isHovered, setIsHovered] = useState(false);
+  const [isMainHovered, setIsMainHovered] = useState(false);
+  const [isRepoHovered, setIsRepoHovered] = useState(false);
 
   return (
     <div className="section">
-      <Link className="link-item" role="button" to={gameData.link_url} onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}>
+      <Link className="link-item" role="button" to={gameData.link_url ? gameData.link_url : ""} onMouseEnter={() => setIsMainHovered(true)}
+      onMouseLeave={() => setIsMainHovered(false)}>
         <div className="result-item">
           <div>
-            <img className={isHovered ? "img" : "img"} referrerPolicy="no-referrer" src={gameData.image_url} />
+            <img className={isMainHovered ? "img img--bigger" : "img"} referrerPolicy="no-referrer" src={gameData.image_url} />
           </div>
           <div className="header">
-            <p className={isHovered ? "name name--hover" : "name"}>{gameData.name}</p>
+            <p className={isMainHovered ? "name name--hover" : "name"}>{gameData.name}</p>
           </div>
           <div className="header">
             <p>{gameData.description}</p>
           </div>
           <div className="header">
-            {gameData.repo_url ? <div><br/><span>{gameData.repo_url}</span></div> : <></>}
+            {gameData.repo_url ?
+              <div>
+                <br/>
+                <Link className="link-item" role="button" to={gameData.repo_url} onMouseEnter={() => setIsRepoHovered(true)} onMouseLeave={() => setIsRepoHovered(false)}>
+                <span className={isRepoHovered ? "name name--hover" : "name"}>{gameData.repo_url}</span>
+                </Link>
+              </div>
+              :
+              <></>
+            }
           </div>
         </div>
       </Link>
