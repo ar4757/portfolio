@@ -1,7 +1,4 @@
-import { useState, useEffect } from 'react'
 import '../index.scss'
-import ResultItem from '../Components/ResultItem'
-import { PortfolioItem } from '../Types/PortfolioItem';
 
 function Resume() {
   return (
