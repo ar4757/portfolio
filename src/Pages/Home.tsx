@@ -6,7 +6,7 @@ import { PortfolioItem } from '../Types/PortfolioItem';
 function Home() {
   const allGames: PortfolioItem[] = [
     {name: "Game Price Drops", description: "A website that scrapes the latest video game sales data and notifies users of new sales.", link_url: "https://www.gamepricedrops.com", image_url: "GamePriceDrops.png", repo_url: null},
-    {name: "Homer", description: "A website used by hundreds of homeowners and businesses to find each other.", link_url: "https://www.homer.com", image_url: "Homer.png", repo_url: null},
+    {name: "Homer", description: "A website used by hundreds of homeowners and businesses to find each other.", link_url: null, image_url: "Homer.png", repo_url: null},
     {name: "Persona 5 Fusion Calculator", description: "An iOS app that identifies Persona fusions for the hit videogame Persona 5.", link_url: null, image_url: "https://github.com/ar4757/Fusion-Calculator/blob/master/GitHub%20Images/demo.gif?raw=true", repo_url: "https://github.com/ar4757/Fusion-Calculator"},
     {name: "Route My Run", description: "An iOS app that recommends running routes, and provides GPS tracking, turn-by-turn directions, and social networking features.", link_url: null, image_url: "RouteMyRun.png", repo_url: "https://github.com/ar4757/Route-My-Run"},
     {name: "Tanks", description: "A video game made in Unity that is inspired by Wii Play.", link_url: null, image_url: "Tanks!.png", repo_url: "https://github.com/ar4757/Tanks"},
