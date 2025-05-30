@@ -21,9 +21,6 @@ function UserApp() {
           <Outlet/>
         </div>
         <br />
-        <footer>
-          <p className="text--tiny">© Copyright 2025 Andrew Ratz</p>
-        </footer>
       </div>
     </div>
   )
