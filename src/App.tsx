@@ -12,9 +12,9 @@ function App() {
   return (
     <LocalizationProvider dateAdapter={AdapterDayjs}>
       <ThemeProvider theme={theme}>
-      <BrowserRouter basename='/portfolio'>
+      <BrowserRouter>
       <Routes>
-        <Route path="/" element={<UserApp/>}>
+        <Route path="/portfolio" element={<UserApp/>}>
           <Route path="" element={<Home />} />
           <Route path="resume" element={<Resume />} />
         </Route>
