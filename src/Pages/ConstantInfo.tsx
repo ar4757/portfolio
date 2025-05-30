@@ -6,8 +6,8 @@ function ConstantInfo() {
     <>
       <h1>Andrew Ratz</h1>
       <div>
-        <p className="text--small">I am a software engineer with a passion for creating innovative solutions. I have experience in web development, mobile app development, and game development.</p>
-        <p className="text--small">I am currently working on various projects that involve web scraping, data analysis, and machine learning.</p>
+        <p className="text--small">I am a software engineer with a passion for creating intuitive user experiences. I have experience in web development, mobile app development, and game development.</p>
+        <br/>
         <div className="wrapper--info">
           <span className="top">Email</span>
           <NavLink className="bottom btn btn--notlogo" role="button" to="mailto:ar4757@gmail.com"><span>ar4757@gmail.com</span></NavLink>
