@@ -20,7 +20,6 @@ dist-ssr
 
 # For me
 .DS_Store
-package-lock.json
 logging/*
 server/*/logging/*
 testing_scripts/*
