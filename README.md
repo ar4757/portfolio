@@ -2,10 +2,8 @@
 
 ## Tools Used
 
-- Terraform - for provisioning AWS infrastructure
 - Vite - frontend framework
 - React - for frontend
-- NodeJS - for backend
 
 ## How to Run Locally
 
