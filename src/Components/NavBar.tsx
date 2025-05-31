@@ -29,8 +29,8 @@ function NavBar() {
             </span>
           </button>
         </div>
-        <NavLink className="nav-btn nav-btn--notlogo" role="button" to="/portfolio/resume"><span>Resume</span></NavLink>
-        <NavLink className="nav-btn nav-btn--notlogo" role="button" to="/portfolio"><span>Home</span></NavLink>
+        <NavLink className="nav-btn nav-btn--notlogo" role="button" to="/resume"><span>Resume</span></NavLink>
+        <NavLink className="nav-btn nav-btn--notlogo" role="button" to="/"><span>Home</span></NavLink>
       </nav>
   );
 };

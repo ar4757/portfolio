@@ -15,7 +15,7 @@ function App() {
       <ThemeProvider theme={theme}>
       <BrowserRouter>
       <Routes>
-        <Route path="/portfolio/" element={<UserApp/>}>
+        <Route path="/" element={<UserApp/>}>
           <Route path="" element={<Home />} />
           <Route path="resume" element={<Resume />} />
         </Route>
