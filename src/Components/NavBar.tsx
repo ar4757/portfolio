@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
 function NavBar() {
-  const [isHamburgerClicked, setIsHamburgerClicked] = useState(false);
+  const [isHamburgerClicked, setIsHamburgerClicked] = useState(true);
   
   useEffect(() => {
     if (isHamburgerClicked) {

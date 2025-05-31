@@ -8,8 +8,17 @@ function LinkToDetails(props: any) {
   const [isMainHovered, setIsMainHovered] = useState(false);
   const [isRepoHovered, setIsRepoHovered] = useState(false);
 
+  const skills = gameData.skills.map((skill) => {
+    //console.log(item);
+    return (
+      <span className="skill" key={skill}>
+        {skill}
+      </span>
+    )
+  });
+
   return (
-    <div className="section">
+    <div>
       <Link className="link-item" role="button" to={gameData.link_url ? gameData.link_url : ""} onMouseEnter={() => setIsMainHovered(true)}
       onMouseLeave={() => setIsMainHovered(false)}>
         <div className="result-item">
@@ -18,6 +27,9 @@ function LinkToDetails(props: any) {
           </div>
           <div className="header">
             <p className={isMainHovered ? "name name--hover" : "name"}>{gameData.name}</p>
+          </div>
+          <div className="header skills-flexbox">
+            {skills}
           </div>
           <div className="header">
             <p>{gameData.description}</p>
