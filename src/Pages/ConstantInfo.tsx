@@ -8,9 +8,9 @@ function ConstantInfo() {
       <div>
         <p className="text--small">I am a software engineer with a passion for creating intuitive user experiences. I have experience in web development, mobile app development, and game development.</p>
         <br/>
-        <NavLink className="wrapper--info" role="button" to="mailto:ar4757@gmail.com">
+        <NavLink className="wrapper--info" role="button" to="mailto:andrewratz47@gmail.com">
           <span>Email</span>
-          <span>ar4757@gmail.com</span>
+          <span>andrewratz47@gmail.com</span>
         </NavLink>
         <br/>
         <NavLink className="wrapper--info" role="button" to="https://www.linkedin.com/in/andrewratz/">
